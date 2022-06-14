@@ -1,0 +1,51 @@
+.button-outline {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    border: 2px solid  var(--wt-color);
+    background: none;
+    color: var(--wt-color);
+    padding: 20px 90px;
+
+    @media (max-width: 1200px ) {
+        padding: 16px 50px;
+    }
+
+    @media (max-width: 992px ) {
+        padding: 16px 90px;
+    }
+
+    @media (max-width: 768px ) {
+        padding: 14px 90px;
+    }
+
+    @media (max-width: 560px ) {
+        width: 100%;
+    }
+
+    &:hover, &:active, &:focus {
+        background: var(--pk-color)
+    }
+
+    &_city {
+        margin-top: 73px;
+        padding: 15px 125px;
+
+        @media (max-width: 1200px ) {
+            margin-top: 32px;
+            padding: 15px 110px;
+        }
+
+        @media (max-width: 992px ) {
+            padding: 16px 70px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 560px ) {
+            margin-top: 66px;
+        } 
+    }
+}
+

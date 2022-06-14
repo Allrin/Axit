@@ -1,0 +1,38 @@
+.form-input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid var(--gr-color);
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 33px;
+
+    &:last-child {
+        margin-bottom: 75px;
+
+        @media (max-width: 768px ) {
+            margin-bottom: 51;
+        }
+    }
+    
+    &::placeholder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 127%;
+        color: var(--gr-color);
+    }
+
+    &_personal {
+        margin-bottom: 50px;
+    }
+    
+    &_personal:last-child {
+        margin-bottom: 0;
+    }
+}
+
