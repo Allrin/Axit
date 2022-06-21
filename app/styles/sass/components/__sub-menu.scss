@@ -21,9 +21,9 @@
         font-size: 14px;
         line-height: 19px;
         text-decoration: none;
-        color:var(--wt-color);
+        color: var(--wt-color);
     }
-    
+
     &__item_active::after {
         content: '';
         display: inline-block;
@@ -38,18 +38,19 @@
         transform: rotate(-45deg);
         -webkit-transition: .3s all;
         transition: .5s all;
-    }    
-}
+    }
 
-.sub-menu__item_has-child > .sub-menu {
-    top: 0;
-    left: 200px;
-}
+    &__item_has-child>& {
+        top: 0;
+        left: 200px;
+    }
 
-.sub-menu__item_has-child:hover > .sub-menu {
-    display: block;
-}
+    &__item_has-child:hover>& {
+        display: block;
+    }
 
-:hover.sub-menu__item_active::after {
-    transform: rotate(-225deg);
+    &__item_active:hover::after {
+        transform: rotate(-225deg);
+    }
+
 }

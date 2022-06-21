@@ -4,28 +4,30 @@
     font-size: 18px;
     line-height: 140%;
     text-align: center;
-    border: 2px solid  var(--wt-color);
+    border: 2px solid var(--wt-color);
     background: none;
     color: var(--wt-color);
     padding: 20px 90px;
 
-    @media (max-width: 1200px ) {
+    @include breakpoint(xl) {
         padding: 16px 50px;
     }
 
-    @media (max-width: 992px ) {
+    @include breakpoint(lg) {
         padding: 16px 90px;
     }
 
-    @media (max-width: 768px ) {
+    @include breakpoint(md) {
         padding: 14px 90px;
     }
 
-    @media (max-width: 560px ) {
+    @include breakpoint(sm) {
         width: 100%;
     }
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
         background: var(--pk-color)
     }
 
@@ -33,19 +35,18 @@
         margin-top: 73px;
         padding: 15px 125px;
 
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             margin-top: 32px;
             padding: 15px 110px;
         }
 
-        @media (max-width: 992px ) {
+        @include breakpoint(lg) {
             padding: 16px 70px;
             font-size: 14px;
         }
-        
-        @media (max-width: 560px ) {
+
+        @include breakpoint(sm) {
             margin-top: 66px;
-        } 
+        }
     }
 }
-

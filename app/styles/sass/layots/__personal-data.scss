@@ -1,26 +1,26 @@
 .personal-data {
     padding: 50px 0;
     text-align: center;
-    
-    @media (max-width: 560px ) {
+
+    @include breakpoint(sm) {
         padding-top: 0;
     }
-    
+
     &__form {
         margin-top: 89px;
-        @media (max-width: 1200px ) {
+
+        @include breakpoint(xl) {
             margin-top: 72px;
         }
 
-        @media (max-width: 560px ) {
+        @include breakpoint(sm) {
             margin-top: 14px;
         }
     }
 
     &__card {
-        @media (max-width: 560px ) {
+        @include breakpoint(sm) {
             margin-top: 50px;
         }
     }
 }
-

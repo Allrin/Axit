@@ -1,55 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AXIT</title>
-    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/app.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/app.min.css" />
     <script src="./js/app.min.js" defer></script>
-    </head>
-<body>
-<header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="/" class="header__logo-link">
-                    <img class="header__logo-img" src="./images/menu/axit.png" alt="" >
-                </a>
-                <nav class="header__nav">
-                    <ul class="header__menu">
-                        <li class="header__menu-item  header__menu-link_active header__menu-link_has-child"><a href="" class="header__menu-link">Features</a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item sub-menu__item_active sub-menu__item_has-child"><a href="" class="sub-menu__link">Project</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a href="" class="sub-menu__link">Architecture</a></li>
-                                        <li class="sub-menu__item"><a href="" class="sub-menu__link">Interior</a></li>
-                                        <li class="sub-menu__item"><a href="" class="sub-menu__link">Landscape</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a href="" class="sub-menu__link">Study</a></li>
-                                <li class="sub-menu__item"><a href="" class="sub-menu__link">Сonnection</a></li>
-                                <li class="sub-menu__item"><a href="" class="sub-menu__link">Сommunication</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item"><a href="" class="header__menu-link">About</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-link">Pricing</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-link">Reviews</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-link">Contact</a></li>
-                    </ul>            
-                </nav>
-                <label class="switch">
-                    <input class = "switch__input" type="checkbox" name="theme" value="dark">
-                    <span class="switch__slider"></span>
-                </label>
-                <button class="burger header__burger">
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
-                </button>
-            </div>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="header__logo-link">
+            <img class="header__logo-img" src="./images/menu/axit.png" alt="" />
+          </a>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li
+                class="header__menu-item header__menu-link_active header__menu-link_has-child"
+              >
+                <a href="" class="header__menu-link">Features</a>
+                <ul class="sub-menu">
+                  <li
+                    class="sub-menu__item sub-menu__item_active sub-menu__item_has-child"
+                  >
+                    <a href="" class="sub-menu__link">Project</a>
+                    <ul class="sub-menu">
+                      <li class="sub-menu__item">
+                        <a href="" class="sub-menu__link">Architecture</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a href="" class="sub-menu__link">Interior</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a href="" class="sub-menu__link">Landscape</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="" class="sub-menu__link">Study</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="" class="sub-menu__link">Сonnection</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="" class="sub-menu__link">Сommunication</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">About</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Pricing</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Reviews</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <label class="switch">
+            <input
+              class="switch__input"
+              type="checkbox"
+              name="theme"
+              value="dark"
+            />
+            <span class="switch__slider"></span>
+          </label>
+          <button class="burger header__burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
         </div>
-</header>
+      </div>
+    </header>
+  </body>
+</html>

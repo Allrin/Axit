@@ -3,24 +3,24 @@
     padding-bottom: 64px;
     text-align: center;
 
-    @media (max-width: 1200px ) {
+    @include breakpoint(xl) {
         padding-bottom: 59px;
     }
-    
-    @media (max-width: 560px ) {
+
+    @include breakpoint(sm) {
         padding-top: 0;
     }
-    
+
     &__card {
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             margin: 0 auto;
             margin-bottom: 30px;
         }
 
-        @media (max-width: 560px ) {
+        @include breakpoint(sm) {
             margin-bottom: 24px;
-            
-        } 
+
+        }
     }
 
     &__card-text {
@@ -36,23 +36,23 @@
         color: var(--gr-color);
         padding: 38px 20px;
 
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             font-size: 14px;
             padding: 50px 25px;
         }
 
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             padding: 30px 25px;
         }
-        
-        @media (max-width: 560px ) {
+
+        @include breakpoint(sm) {
             font-size: 14px;
             padding: 50px 25px;
-        } 
+        }
     }
-    
+
     &__card-text::after {
-        content: ''; 
+        content: '';
         position: absolute;
         top: 100%;
         left: 70px;
@@ -60,4 +60,3 @@
         border-top: 20px solid #E2E2E2;
     }
 }
-

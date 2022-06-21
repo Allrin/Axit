@@ -8,31 +8,31 @@
         padding-top: 42px;
         text-transform: uppercase;
 
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             font-size: 24px;
             padding-top: 42px;
         }
     }
 
-    &__title:after{
-        content: ''; 
+    &__title:after {
+        content: '';
         width: 170px;
         margin: 60px auto 0 auto;
         text-align: center;
-        display:block;
+        display: block;
         border: 0.5px solid var(--pk-color);
         margin-bottom: 0px;
 
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             width: 142px;
             margin: 45px auto 0 auto;
         }
 
-        @media (max-width: 768px ) {
+        @include breakpoint(md) {
             width: 134px;
         }
     }
-    
+
     &__subtitle {
         font-family: 'Raleway';
         font-weight: 400;
@@ -41,31 +41,29 @@
         margin-top: 42px;
         color: var(--gr-color);
 
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             margin-top: 32px;
             font-size: 14px;
         }
-        
-        @media (max-width: 560px ) {
+
+        @include breakpoint(sm) {
             margin-top: 24px;
-        } 
+        }
     }
 
-    &_active{
+    &_active {
         color: var(--wt-color);
     }
-    
-    &_active > &__subtitle{
+
+    &_active>&__subtitle {
         color: var(--wt-color);
-        
-        @media (max-width: 560px ) {
+
+        @include breakpoint(sm) {
             margin-top: 16px;
-        } 
+        }
     }
-    
-    &_active > &__title::after {
+
+    &_active>&__title::after {
         border-color: #86878B;
     }
 }
-
-

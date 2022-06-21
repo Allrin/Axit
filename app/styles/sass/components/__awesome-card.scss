@@ -1,18 +1,18 @@
 .awesome-card {   
     text-align: center;
 
-    @media (max-width: 992px ) {
+    @include breakpoint(lg) {
         margin: 0 auto;
     }
 
-    @media (max-width: 560px ) {
+    @include breakpoint(sm) {
         margin-top: 50px;
     }
 
     &__icon {
         display: inline-block;
 
-        @media (max-width: 768px ) {
+        @include breakpoint(md) {
             max-width: 147px;
             max-height: 147px;
         }    
@@ -32,13 +32,13 @@
             padding: 10px 0;
         }
 
-        @media (max-width: 992px ) {
+        @include breakpoint(lg) {
             font-size: 18px;
             padding: 0;
             margin-bottom: 0;
         }
 
-        @media (max-width: 560px ) {
+        @include breakpoint(sm) {
             padding: 30px 15px;
         }
     }
@@ -61,7 +61,7 @@
             margin-top: 20px;
         }
         
-        @media (max-width: 560px ) {
+        @include breakpoint(sm) {
             margin-top: 9px;
         }
     }

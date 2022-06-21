@@ -1,7 +1,6 @@
 /* * {
 outline: 1px solid red;
 } */
-
 :root {
     --content-width: 1170px;
     --mobile-padding: 16px;
@@ -10,13 +9,15 @@ outline: 1px solid red;
     --wt-color: #fff;
     --gr-color: #86878B;
     --bk-color: #000;
-    @media (max-width: 1200px ) {
+
+    @include breakpoint(xl) {
         --gutter: 10px;
     }
-    
+
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
     padding: 0;
     margin: 0;

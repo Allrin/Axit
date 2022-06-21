@@ -12,11 +12,11 @@
     &:last-child {
         margin-bottom: 75px;
 
-        @media (max-width: 768px ) {
+        @include breakpoint(md) {
             margin-bottom: 51;
         }
     }
-    
+
     &::placeholder {
         position: absolute;
         top: 0;
@@ -30,9 +30,8 @@
     &_personal {
         margin-bottom: 50px;
     }
-    
+
     &_personal:last-child {
         margin-bottom: 0;
     }
 }
-

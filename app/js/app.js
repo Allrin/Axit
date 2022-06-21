@@ -26,23 +26,23 @@ window.onclick = function (event) {
 
 /*tabs*/
 function showTab(event) {
-    document.querySelector('.show-tab').classList.remove('show-tab');
-    document.querySelector('.active-tab').classList.remove('active-tab');
+    document.querySelector('.tabs__tab_show').classList.remove('tabs__tab_show');
+    document.querySelector('.tabs__tab_active').classList.remove('tabs__tab_active');
     let button = event.target;
-    button.classList.add('active-tab');
+    button.classList.add('tabs__tab_active');
     let buttonClass = event.target.classList[1];
     let content = document.querySelectorAll('.' + buttonClass)[1];
-    content.classList.add('show-tab');
+    content.classList.add('tabs__tab_show');
     }
     function defaultHide() {
-        let a = document.querySelectorAll('.content');
+        let a = document.querySelectorAll('.tabs__tab_content');
         a.forEach(
             function addClass(info) {
-                info.classList.add('js-default-hide');
+                info.classList.add('tabs__tab-hide');
             }
         )
     }
-    let tabButton = document.getElementsByClassName('tab');
+    let tabButton = document.getElementsByClassName('tabs__tab');
     for (let i = 0; i < tabButton.length; i++) {
     tabButton[i].addEventListener('click', showTab);
     }
@@ -50,9 +50,11 @@ function showTab(event) {
 
 
     /*switch*/
+
     document.querySelector('.switch').addEventListener('change', (event) => {
         if (event.target.nodeName === 'INPUT') {
             document.documentElement.classList.toggle('dark');
+            social.classList.toggle('dark');
         }
 
     });

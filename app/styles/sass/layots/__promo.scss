@@ -1,5 +1,5 @@
 .promo {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/promo/street.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/promo/street.png);
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
@@ -8,24 +8,25 @@
     text-align: left;
     min-height: 100vh;
 
-    @media (max-width: 1200px ) {
+    @include breakpoint(xl) {
         padding-top: 202px;
         padding-bottom: 106px;
     }
 
-    @media (max-width: 992px ) {
+    @include breakpoint(lg) {
         padding-top: 150px;
         text-align: center;
     }
 
-    @media (max-width: 768px ) {
+    @include breakpoint(md) {
         padding-top: 140px;
         padding-bottom: 50px;
     }
 
     &__logo {
         display: inline-block;
-        @media (max-width: 768px ) {
+
+        @include breakpoint(md) {
             display: none;
         }
     }
@@ -39,40 +40,40 @@
         color: var(--wt-color);
         margin-top: 72px;
 
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             font-size: 36px;
             margin-top: 50px;
         }
 
-        @media (max-width: 768px ) {
+        @include breakpoint(md) {
             margin-top: 0
         }
     }
 
     &__title::after {
-        content: ''; 
+        content: '';
         width: 170px;
         display: block;
         border: 0.5px solid var(--wt-color);
         margin-top: 55px;
 
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             width: 115px;
             margin-top: 41px;
         }
 
-        @media (max-width: 992px ) {
+        @include breakpoint(lg) {
             margin: 0 auto;
             margin-top: 40px;
             margin-bottom: 30px;
         }
 
-        @media (max-width: 768px ) {
+        @include breakpoint(md) {
             width: 134px;
             margin: 40px auto;
         }
     }
-    
+
     &__subtitle {
         max-width: 270px;
         font-family: 'Raleway';
@@ -82,21 +83,21 @@
         color: var(--wt-color);
         margin: 42px 0;
 
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             font-size: 14px;
             margin: 31px 0;
         }
 
-        @media (max-width: 992px ) {
+        @include breakpoint(lg) {
             margin: 0px auto;
             margin-bottom: 40px;
         }
 
-        @media (max-width: 768px ) {
+        @include breakpoint(md) {
             margin: 0 auto 40px;
         }
     }
-    
+
     &__form {
         background: var(--wt-color);
         border-radius: 10px;
@@ -104,13 +105,13 @@
         flex-direction: column;
         max-height: 450px;
 
-        @media (max-width: 992px ) {
+        @include breakpoint(lg) {
             margin: 0 auto;
             margin-top: 56px;
             max-width: 70%;
         }
 
-        @media (max-width: 560px ) {
+        @include breakpoint(sm) {
             max-width: 100%;
         }
     }
@@ -126,11 +127,11 @@
         margin-bottom: 45px;
         text-align: center;
 
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             font-size: 18px;
         }
 
-        @media (max-width: 768px ) {
+        @include breakpoint(md) {
             margin-bottom: 0px;
         }
     }
@@ -138,13 +139,12 @@
     &__form-content {
         padding: 0 50px;
 
-        @media (max-width: 768px ) {
+        @include breakpoint(md) {
             padding: 0 25px;
         }
     }
-    
+
     &__form-title_active {
         color: var(--pk-color);
     }
 }
-

@@ -3,8 +3,8 @@
     padding-bottom: 50px;
     text-align: center;
     background: #F5F5F5;
-    
-    @media (max-width: 560px ) {
+
+    @include breakpoint(sm) {
         padding-top: 0;
     }
 }

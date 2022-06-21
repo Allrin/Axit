@@ -1,14 +1,13 @@
-
 .footer {
     background: var(--bk-color);
     padding-top: 39px;
     padding-bottom: 27px;
 
-    @media (max-width: 992px ) {
+    @include breakpoint(lg) {
         padding: 25px 0;
     }
 
-    @media (max-width: 560px ) {
+    @include breakpoint(sm) {
         padding: 35px 0 45px 0;
     }
 
@@ -17,40 +16,41 @@
         align-items: center;
         flex-wrap: wrap;
 
-        @media (max-width: 768px ) {
+        @include breakpoint(md) {
             justify-content: space-between;
         }
     }
-    
+
     &__links-item {
         margin-right: 33px;
         padding: 6px 6px;
 
-        @media (max-width: 1200px ) {
-        margin-right: 27px;
+        @include breakpoint(xl) {
+            margin-right: 27px;
         }
 
-        @media (max-width: 992px ) {
+        @include breakpoint(lg) {
             margin-right: 25px;
             padding: 0;
         }
 
-        @media (max-width: 768px ) {
-            a > svg {
+        @include breakpoint(md) {
+            a>svg {
                 width: 40px;
                 height: 40px;
+            }
         }
-    }
 
-        @media (max-width: 560px ) {
+        @include breakpoint(sm) {
             margin-right: 15px;
-                a > svg {
-                    width: 26px;
-                    height: 26px;
+
+            a>svg {
+                width: 26px;
+                height: 26px;
             }
         }
     }
-    
+
     &__links-item:last-child {
         margin-right: 0;
     }
@@ -68,25 +68,21 @@
         margin-top: 32px;
         margin-bottom: 0;
 
-        @media (max-width: 1200px ) {
+        @include breakpoint(xl) {
             margin-top: 38px;
-        } 
-        
-        @media (max-width: 992px ) {
+        }
+
+        @include breakpoint(lg) {
             margin-top: 25px;
         }
 
-        @media (max-width: 768px ) {
+        @include breakpoint(md) {
             font-size: 14px;
         }
 
-        @media (max-width: 560px ) {
+        @include breakpoint(sm) {
             margin-top: 40px;
         }
     }
 }
 
-.element_center {
-    justify-content: center;
-    
-}
