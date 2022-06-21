@@ -1,306 +1,519 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AXIT</title>
-    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/app.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/app.min.css" />
     <script src="./js/app.min.js" defer></script>
-    </head>
-<body>
-<header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="/" class="header__logo-link">
-                    <img class="header__logo-img" src="./images/menu/axit.png" alt="" >
-                </a>
-                <nav class="header__nav">
-                    <ul class="header__menu">
-                        <li class="header__menu-item  header__menu-link_active header__menu-link_has-child"><a href="" class="header__menu-link">Features</a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item sub-menu__item_active sub-menu__item_has-child"><a href="" class="sub-menu__link">Project</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a href="" class="sub-menu__link">Architecture</a></li>
-                                        <li class="sub-menu__item"><a href="" class="sub-menu__link">Interior</a></li>
-                                        <li class="sub-menu__item"><a href="" class="sub-menu__link">Landscape</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a href="" class="sub-menu__link">Study</a></li>
-                                <li class="sub-menu__item"><a href="" class="sub-menu__link">Сonnection</a></li>
-                                <li class="sub-menu__item"><a href="" class="sub-menu__link">Сommunication</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item"><a href="" class="header__menu-link">About</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-link">Pricing</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-link">Reviews</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-link">Contact</a></li>
-                    </ul>            
-                </nav>
-                <label class="switch">
-                    <input class = "switch__input" type="checkbox" name="theme" value="dark">
-                    <span class="switch__slider"></span>
-                </label>
-                <button class="burger header__burger">
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
-                </button>
-            </div>
-        </div>
-</header>
-
-<Main class="main">
-    <section class="promo">
-        <div class="container">
-            <div class="row " >
-                <div class="col-7 promo_card col-md-12">                    
-                        <a href="#!" class="promo__logo"><img src="./images/promo/logo.png" alt="Axit"></a>
-                            <h1 class="promo__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>         
-                            <p class="promo__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        <button class="button-outline" id = "myBtn">Download</button>
-                    </div> 
-                <form class="col-5 promo__form col-md-12">
-                    <div class="promo__form-content">
-                        <p class="promo__form-title">Try Your <span class="promo__form-title_active">FREE</span> Trial Today</p>
-                        <input type="text" class="form-input" placeholder="Name">
-                        <input type="text" class="form-input" placeholder= "Email">
-                        <input type="password" class="form-input" placeholder="Password">
-                    </div>
-                        <button href="#!" class="button-prime button-prime_promo">Get Started</button>
-                </form>
-            </div>
-        </div>
-</section>
-<section class="social">
-    <div class = "container">
-        <div class= "row row_social">
-            <div class="social__media col-5 col-sm-12">
-                <h4 class="social__media-title"> Social Media</h4>
-                <h5 class="social__media-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</h5>
-            </div> 
-                <ul class="social__links col-7 col-sm-12">
-                    <li class="social__links-item"><a href="#" target="_blank"><img src="./images/fb.svg" alt=""></a></li>
-                    <li class="social__links-item"><a href="#" target="_blank"><img src="./images/twit.svg" alt=""></a></li>
-                    <li class="social__links-item"><a href="#" target="_blank"><img src="./images/in.svg" alt=""></a></li>
-                    <li class="social__links-item"><a href="#" target="_blank"><img src="./images/p_icon.svg" alt=""></a></li>
-                    <li class="social__links-item"><a href="#" target="_blank"><img src="./images/inst.svg" alt=""></a></li>
-                    <li class="social__links-item"><a href="#" target="_blank"><img src="./images/git.svg" alt=""></a></li>
-                    <li class="social__links-item"><a href="#" target="_blank"><img src="./images/rss_icon.svg" alt=""></a></li>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="header__logo-link">
+            <img class="header__logo-img" src="./images/menu/axit.png" alt="" />
+          </a>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li
+                class="header__menu-item header__menu-link_active header__menu-link_has-child"
+              >
+                <a href="" class="header__menu-link">Features</a>
+                <ul class="sub-menu">
+                  <li
+                    class="sub-menu__item sub-menu__item_active sub-menu__item_has-child"
+                  >
+                    <a href="" class="sub-menu__link">Project</a>
+                    <ul class="sub-menu">
+                      <li class="sub-menu__item">
+                        <a href="" class="sub-menu__link">Architecture</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a href="" class="sub-menu__link">Interior</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a href="" class="sub-menu__link">Landscape</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="" class="sub-menu__link">Study</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="" class="sub-menu__link">Сonnection</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="" class="sub-menu__link">Сommunication</a>
+                  </li>
                 </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">About</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Pricing</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Reviews</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <label class="switch">
+            <input
+              class="switch__input"
+              type="checkbox"
+              name="theme"
+              value="dark"
+            />
+            <span class="switch__slider"></span>
+          </label>
+          <button class="burger header__burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
         </div>
-    </div> 
-</section>
-<Section class="tabs">
+      </div>
+    </header>
+  </body>
+</html>
+
+
+<main class="main">
+  <section class="promo">
     <div class="container">
-        <div class="tabs__cards">
-            <button class="tab tab-1 active-tab">tab 1</button>
-            <button class="tab tab-2">tab 2</button>
-            <button class="tab tab-3">tab 3</button>
-                <div class="content tab-1 show-tab">
-                    <div class="row">
-                        <div class="col-6 tabs__content col-sm-12">
-                            <h2 class="tabs__content-title">Tabs with soft transitioning effect.</h2>
-                            <p class="tabs__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod  
-                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                                penatibus et magnis dis parturient montes.                
-                                <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                                bibendum laoreet.</p>
-                            <button class="button-prime button-prime_tub">Download</button>
-                        </div>
-                        <div class="col-5 tabs__wrap">
-                            <img class="tabs__wrap-img" src="./images/tabs/pizanskaya-bashnya.jpg" alt="Statue of Liberty">
-                        </div>
-                    </div>
-                </div>             
-                <div class="content tab-2">
-                    <div class="row">
-                        <div class="col-6 tabs__content col-sm-12">
-                            <h2 class="tabs__content-title">Tabs with soft transitioning effect.</h2>
-                            <p class="tabs__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod  
-                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                                penatibus et magnis dis parturient montes.                
-                                <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                                bibendum laoreet.</p>
-                                <button class="button-prime button-prime_tub">Download</button>
-                        </div>
-                        <div class="col-5 tabs__wrap">
-                            <img class="tabs__wrap-img" src="./images/tabs/statue_of_liberty.jpg" alt="Statue of Liberty">
-                        </div>
-                    </div>
-                </div> 
-                <div class="content tab-3">
-                    <div class="row">
-                        <div class="col-6 tabs__content col-sm-12">
-                            <h2 class="tabs__content-title">Tabs with soft transitioning effect.</h2>
-                            <p class="tabs__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod  
-                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                                penatibus et magnis dis parturient montes.                
-                                <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                                bibendum laoreet.</p>
-                                <button class="button-prime button-prime_tub">Download</button>
-                        </div>
-                        <div class="col-5 tabs__wrap">
-                            <img class="tabs__wrap-img" src="./images/tabs/tour-eiffel.jpg" alt="Statue of Liberty">
-                        </div>                        
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-7 promo_card col-md-12">
+          <a href="#!" class="promo__logo"
+            ><img src="./images/promo/logo.png" alt="Axit"
+          /></a>
+          <h1 class="promo__title">
+            MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+          </h1>
+          <p class="promo__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+          <button class="button-outline" id="myBtn">Download</button>
         </div>
-</Section>
-<section class="awesome">
-    <div class="container">
-        <div class="section-head">
-            <h2 class="section-head__title">WHY THIS IS AWESOME</h2>         
-            <p class="section-head__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-            <div class="row row_awesome">
-            <div class="awesome-card col-4 col-md-6 col-xs-12">
-                <img class="awesome-card__icon" src="./images/causas/bulbus.svg" alt="">
-                <h4 class="awesome-card__title">Thoughtful Design</h4>
-                <h5 class="awesome-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</h5>
-            </div>
-            <div class="awesome-card col-4 col-md-6 col-xs-12">
-                <img class="awesome-card__icon" src="./images/causas/typewriter.svg" alt="">
-                <h4 class="awesome-card__title">Thoughtful Design</h4>
-                <h5 class="awesome-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</h5>            
-            </div>        
-            <div class="awesome-card col-4 col-md-6 col-xs-12">
-                <img class="awesome-card__icon" src="./images/causas/lightning.svg" alt="">
-                <h4 class="awesome-card__title">Thoughtful Design</h4>
-                <h5 class="awesome-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</h5>           
-            </div>
-        </div>
-    </div>
-</section>
-<section class="price">
-    <div class = "container">
-        <div class="section-head">
-            <h2 class="section-head__title">pricing options</h2>         
-            <p class="section-head__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="row row_price">
-            <div class="price-card col-4 col-md-6 col-xs-12">
-                <div class="price-card__name">Basic</div>
-                <div class="price-card__cost">$10</div>
-                <div class="price-card__data">Free for life</div>
-                <ul class="price-card_info">
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                </ul>                
-            </div>
-            <div class="price-card price-card_active col-4 col-md-6 col-xs-12">
-                <div class="price-card__name">Optima</div>
-                <div class="price-card__cost">$20</div>
-                <div class="price-card__data">Free for life</div>
-                <ul class="price-card__info">
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                </ul>                
-            </div>
-            <div class="price-card col-4 col-md-6 col-xs-12">
-                <div class="price-card__name">Pro</div>
-                <div class="price-card__cost">$30</div>
-                <div class="price-card__data">Free for life</div>
-                <ul class="price-card__info">
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                    <li class="price-card__info-item"><a class="price-card__info-link" href="#">1 gb of space</a></li>
-                </ul>                
-            </div>
-        </div>
-    </div>
-</section>
-<section class="customer">
-    <div class="container">
-        <div class="section-head">
-            <h2 class="section-head__title">what our customers are saying</h2>         
-            <p class="section-head__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="row row_customer">
-            <div class="customer__card col-4 col-md-6 col-xs-12">
-                <div class="customer__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</div>
-                <div class="customer-manager">
-                    <img class ="customer-manager__icon" src="./images/manager/devis.png" alt="Davis">
-                    <div class="customer-manager__info">
-                        <div class="customer-manager__info-name">Davis Rhiel Madsen</div>
-                        <div class="customer-manager__info-job">Manager</div>
-                    </div>
-                </div>
-            </div>
-            <div class="customer__card col-4 col-md-6 col-xs-12">
-                <div class="customer__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</div>
-                <div class="customer-manager">
-                    <img class="customer-manager__icon" src="./images/manager/jaydon.png" alt="Jaydon">
-                    <div class="customer-manager__info">
-                        <div class="customer-manager__info-name">Jaydon Rosser</div>
-                        <div class="customer-manager__info-job">Manager</div>
-                    </div>
-                </div>
-            </div>
-            <div class="customer__card col-4 col-md-6 col-xs-12">
-                <div class="customer__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</div>
-                <div class="customer-manager">
-                    <img class="customer-manager__icon" src="./images/manager/cooper.png" alt="Cooper">
-                    <div class="customer-manager__info">
-                        <div class="customer-manager__info-name">Cooper Dorwart</div>
-                        <div class="customer-manager__info-job">Manager</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="city">
-    <div class="container">
-        <div class="section-head section-head_active">
-            <h2 class="section-head__title">STYLISH AXURE DESIGN</h2>         
-            <p class="section-head__subtitle">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
-        </div>
-        <button class="button-outline  button-outline_city">Download</button>
-    </div>
-</section>
-<section class="personal-data">
-    <div class="container">
-        <div class="section-head">
-            <h2 class="section-head__title">contact us</h2>         
-            <p class="section-head__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <form action="" class="personal-data__form">
-            <div class="row">
-                <div class= "personal-data__card col-6 col-xs-12">
-                    <input type="text" class="form-input form-input_personal" placeholder="Name">
-                    <input type="text" class="form-input form-input_personal" placeholder= "Email">
-                    <input type="password" class="form-input form-input_personal" placeholder="Password">
-                </div>
-                <div class=" personal-data__card col-6 col-xs-12">
-                    <textarea class="form-texarea" id="message" placeholder="Message"></textarea>            
-                </div>
-            </div>
+        <form class="col-5 promo__form col-md-12">
+          <div class="promo__form-content">
+            <p class="promo__form-title">
+              Try Your <span class="promo__form-title_active">FREE</span> Trial
+              Today
+            </p>
+            <input type="text" class="form-input" placeholder="Name" />
+            <input type="text" class="form-input" placeholder="Email" />
+            <input type="password" class="form-input" placeholder="Password" />
+          </div>
+          <button href="#!" class="button-prime button-prime_promo">
+            Get Started
+          </button>
         </form>
-        <button class="button-prime button-prime_personal">Send Message</button>
+      </div>
     </div>
-</section>
-</Main>
+  </section>
+  <section class="social">
+    <div class="container">
+      <div class="row row_social">
+        <div class="social__media col-5 col-sm-12">
+          <h4 class="social__media-title">Social Media</h4>
+          <h5 class="social__media-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet.
+          </h5>
+        </div>
+        <ul class="social__links col-7 col-sm-12">
+          <li class="social__links-item">
+            <a href="#" target="_blank"><img src="./images/fb.svg" alt="" /></a>
+          </li>
+          <li class="social__links-item">
+            <a href="#" target="_blank"
+              ><img src="./images/twit.svg" alt=""
+            /></a>
+          </li>
+          <li class="social__links-item">
+            <a href="#" target="_blank"><img src="./images/in.svg" alt="" /></a>
+          </li>
+          <li class="social__links-item">
+            <a href="#" target="_blank"
+              ><img src="./images/p_icon.svg" alt=""
+            /></a>
+          </li>
+          <li class="social__links-item">
+            <a href="#" target="_blank"
+              ><img src="./images/inst.svg" alt=""
+            /></a>
+          </li>
+          <li class="social__links-item">
+            <a href="#" target="_blank"
+              ><img src="./images/git.svg" alt=""
+            /></a>
+          </li>
+          <li class="social__links-item">
+            <a href="#" target="_blank"
+              ><img src="./images/rss_icon.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="tabs">
+    <div class="container">
+      <div class="tabs__cards">
+        <button class="tabs__tab tabs__tab-1 tabs__tab_active">tab 1</button>
+        <button class="tabs__tab tabs__tab-2">tab 2</button>
+        <button class="tabs__tab tabs__tab-3">tab 3</button>
+        <div class="tabs__tab_content tabs__tab-1 tabs__tab_show">
+          <div class="row">
+            <div class="col-6 tabs__content col-sm-12">
+              <h2 class="tabs__content-title">
+                Tabs with soft transitioning effect.
+              </h2>
+              <p class="tabs__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra justo commodo. Proin sodales pulvinar
+                tempor. Cum sociis natoque penatibus et magnis dis parturient
+                montes. <br /><br />Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Aenean euismod bibendum laoreet.
+              </p>
+              <button class="button-prime button-prime_tub">Download</button>
+            </div>
+            <div class="col-5 tabs__wrap">
+              <img
+                class="tabs__wrap-img"
+                src="./images/tabs/pizanskaya-bashnya.jpg"
+                alt="Statue of Liberty"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="tabs__tab_content tabs__tab-2">
+          <div class="row">
+            <div class="col-6 tabs__content col-sm-12">
+              <h2 class="tabs__content-title">
+                Tabs with soft transitioning effect.
+              </h2>
+              <p class="tabs__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra justo commodo. Proin sodales pulvinar
+                tempor. Cum sociis natoque penatibus et magnis dis parturient
+                montes. <br /><br />Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Aenean euismod bibendum laoreet.
+              </p>
+              <button class="button-prime button-prime_tub">Download</button>
+            </div>
+            <div class="col-5 tabs__wrap">
+              <img
+                class="tabs__wrap-img"
+                src="./images/tabs/statue_of_liberty.jpg"
+                alt="Statue of Liberty"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="tabs__tab_content tabs__tab-3">
+          <div class="row">
+            <div class="col-6 tabs__content col-sm-12">
+              <h2 class="tabs__content-title">
+                Tabs with soft transitioning effect.
+              </h2>
+              <p class="tabs__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra justo commodo. Proin sodales pulvinar
+                tempor. Cum sociis natoque penatibus et magnis dis parturient
+                montes. <br /><br />Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Aenean euismod bibendum laoreet.
+              </p>
+              <button class="button-prime button-prime_tub">Download</button>
+            </div>
+            <div class="col-5 tabs__wrap">
+              <img
+                class="tabs__wrap-img"
+                src="./images/tabs/tour-eiffel.jpg"
+                alt="Statue of Liberty"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="awesome">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-head__title">WHY THIS IS AWESOME</h2>
+        <p class="section-head__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div class="row row_awesome">
+        <div class="awesome-card col-4 col-md-6 col-xs-12">
+          <img
+            class="awesome-card__icon"
+            src="./images/causas/bulbus.svg"
+            alt=""
+          />
+          <h4 class="awesome-card__title">Thoughtful Design</h4>
+          <h5 class="awesome-card__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br />elit.
+            Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra.
+          </h5>
+        </div>
+        <div class="awesome-card col-4 col-md-6 col-xs-12">
+          <img
+            class="awesome-card__icon"
+            src="./images/causas/typewriter.svg"
+            alt=""
+          />
+          <h4 class="awesome-card__title">Thoughtful Design</h4>
+          <h5 class="awesome-card__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br />elit.
+            Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra.
+          </h5>
+        </div>
+        <div class="awesome-card col-4 col-md-6 col-xs-12">
+          <img
+            class="awesome-card__icon"
+            src="./images/causas/lightning.svg"
+            alt=""
+          />
+          <h4 class="awesome-card__title">Thoughtful Design</h4>
+          <h5 class="awesome-card__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br />elit.
+            Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra.
+          </h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="price">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-head__title">pricing options</h2>
+        <p class="section-head__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div class="row row_price">
+        <div class="price-card col-4 col-md-6 col-xs-12">
+          <div class="price-card__name">Basic</div>
+          <div class="price-card__cost">$10</div>
+          <div class="price-card__data">Free for life</div>
+          <ul class="price-card_info">
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+          </ul>
+        </div>
+        <div class="price-card price-card_active col-4 col-md-6 col-xs-12">
+          <div class="price-card__name">Optima</div>
+          <div class="price-card__cost">$20</div>
+          <div class="price-card__data">Free for life</div>
+          <ul class="price-card__info">
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+          </ul>
+        </div>
+        <div class="price-card col-4 col-md-6 col-xs-12">
+          <div class="price-card__name">Pro</div>
+          <div class="price-card__cost">$30</div>
+          <div class="price-card__data">Free for life</div>
+          <ul class="price-card__info">
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+            <li class="price-card__info-item">
+              <a class="price-card__info-link" href="#">1 gb of space</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="customer">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-head__title">what our customers are saying</h2>
+        <p class="section-head__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div class="row row_customer">
+        <div class="customer__card col-4 col-md-6 col-xs-12">
+          <div class="customer__card-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            accusamus expedita repellat similique odio aspernatur ex, architecto
+            eaque quo suscipit.
+          </div>
+          <div class="customer-manager">
+            <img
+              class="customer-manager__icon"
+              src="./images/manager/devis.png"
+              alt="Davis"
+            />
+            <div class="customer-manager__info">
+              <div class="customer-manager__info-name">Davis Rhiel Madsen</div>
+              <div class="customer-manager__info-job">Manager</div>
+            </div>
+          </div>
+        </div>
+        <div class="customer__card col-4 col-md-6 col-xs-12">
+          <div class="customer__card-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            accusamus expedita repellat similique odio aspernatur ex, architecto
+            eaque quo suscipit.
+          </div>
+          <div class="customer-manager">
+            <img
+              class="customer-manager__icon"
+              src="./images/manager/jaydon.png"
+              alt="Jaydon"
+            />
+            <div class="customer-manager__info">
+              <div class="customer-manager__info-name">Jaydon Rosser</div>
+              <div class="customer-manager__info-job">Manager</div>
+            </div>
+          </div>
+        </div>
+        <div class="customer__card col-4 col-md-6 col-xs-12">
+          <div class="customer__card-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            accusamus expedita repellat similique odio aspernatur ex, architecto
+            eaque quo suscipit.
+          </div>
+          <div class="customer-manager">
+            <img
+              class="customer-manager__icon"
+              src="./images/manager/cooper.png"
+              alt="Cooper"
+            />
+            <div class="customer-manager__info">
+              <div class="customer-manager__info-name">Cooper Dorwart</div>
+              <div class="customer-manager__info-job">Manager</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="city">
+    <div class="container">
+      <div class="section-head section-head_active">
+        <h2 class="section-head__title">STYLISH AXURE DESIGN</h2>
+        <p class="section-head__subtitle">
+          Use the sections you need, remove the ones you don't. Create gorgeous
+          prototypes faster than ever!
+        </p>
+      </div>
+      <button class="button-outline button-outline_city">Download</button>
+    </div>
+  </section>
+  <section class="personal-data">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-head__title">contact us</h2>
+        <p class="section-head__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <form action="" class="personal-data__form">
+        <div class="row">
+          <div class="personal-data__card col-6 col-xs-12">
+            <input
+              type="text"
+              class="form-input form-input_personal"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              class="form-input form-input_personal"
+              placeholder="Email"
+            />
+            <input
+              type="password"
+              class="form-input form-input_personal"
+              placeholder="Password"
+            />
+          </div>
+          <div class="personal-data__card col-6 col-xs-12">
+            <textarea
+              class="form-texarea"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+      <button class="button-prime button-prime_personal">Send Message</button>
+    </div>
+  </section>
+</main>
 
 <div id = "mymodal" class="modal">
     <div class="modal__content">
@@ -316,7 +529,7 @@
 </div>
 <footer class="footer">
     <div class="container">
-        <div class="row element_center">
+        <div class="row row_footer">
             <ul class="footer__links">
                 <li class="footer__links-item"><a href="#" target="_blank"><svg width="32" height="56" viewBox="0 0 32 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.82702 55.7083H19.4937V32.3458H30.0054L31.1604 20.7375H19.4937V14.875C19.4937 14.1014 19.801 13.3595 20.348 12.8126C20.8949 12.2656 21.6368 11.9583 22.4104 11.9583H31.1604V0.291626H22.4104C18.5426 0.291626 14.8333 1.82808 12.0984 4.56299C9.36347 7.29789 7.82702 11.0072 7.82702 14.875V20.7375H1.99368L0.838684 32.3458H7.82702V55.7083Z" fill="#CCCCCC"/>
