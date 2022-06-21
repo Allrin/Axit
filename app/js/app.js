@@ -53,10 +53,20 @@ function showTab(event) {
     document.querySelector('.switch').addEventListener('change', (event) => {
         if (event.target.nodeName === 'INPUT') {
             document.documentElement.classList.toggle('dark');
-            document.getElementById('social').classList.add('dark1');
         }
 
     });
+
+     //mobile menu
+  const headerBurger = document.querySelector(".header__burger");
+  const headerNav = document.querySelector(".header__nav");
+
+
+  headerBurger.addEventListener("click", function (event) {
+    headerBurger.classList.toggle("burger_closed");
+    headerNav.classList.toggle("header__nav_opened");
+
+  });
 
 })
 

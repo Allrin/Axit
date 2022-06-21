@@ -1,10 +1,14 @@
 .switch {
+    display: block;
     position: relative;
-    display: inline-block;
+    top: 40px;
+    transform: translateY(-50%);
     width: 51px;
     height: 28px;
-    top: 50%;
-    transform: translate(0,-50%);
+    margin-right: 20px;
+    @media (max-width: 768px) {
+        margin-left: auto;
+    }
 
   /* Hide default HTML checkbox */
     & input {
